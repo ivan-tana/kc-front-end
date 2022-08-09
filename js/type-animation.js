@@ -49,7 +49,6 @@ let type_observer = new IntersectionObserver((entries, type_observer) =>
 var type_texts = document.querySelectorAll('[type-animation]')
 console.log(type_texts)
 type_texts.forEach(text => {
-    console.log(text)
     type_observer.observe(text)
 });
 
