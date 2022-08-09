@@ -5,15 +5,15 @@
 let who_are_we = ''
 let who_are_we_summary = ''
 fetch('http://kingdomculture.herokuapp.com/api/about%20kc')
-        .then(res => res.json())
-        .then(data => 
-            {
-                who_are_we = conver_to_html(data['who are we'])
-                who_are_we_summary = conver_to_html(data['who are we summary'])
+    .then(res => res.json())
+    .then(data => 
+        {
+            who_are_we = conver_to_html(data['who are we'])
+            who_are_we_summary = conver_to_html(data['who are we summary'])
 
-                change_text('hero_text', who_are_we_summary)
-                change_text('who_are_we', who_are_we )
-            })
+            change_text('hero_text', who_are_we_summary)
+            change_text('who_are_we', who_are_we )
+        })
 
 
 
