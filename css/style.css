@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,200;1,500;1,600;1,800;1,900&display=swap');
+@import 'components/nav-bar.css';
+@import 'components/hero.css';
+@import 'components/who-we-are.css';
+@import 'components/activities.css';
+@import 'components/team.css';
+@import 'components/footer.css';
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root
+{
+    --primary-color: #fbcc13;
+    --secondary-color:#fbdd23;
+    --contranst-primary:#0622c9;
+    --max-page-width: 1000px;
+    --hero-image: url('https://p1.pxfuel.com/preview/723/542/411/happy-sad-crying-child-people-tears.jpg');
+}
+
+body 
+{
+    overflow-x: hidden;
+}
+.max-content-container
+{
+    position: relative;
+    max-width: var(--max-page-width);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button, a.button
+{
+    padding: 10px 20px;
+    color: var(--contranst-primary);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+}
+button[invert], a.button[invert]
+{
+    background-color: var(--contranst-primary);
+    color: var(--primary-color);
+}
+.heading
+{
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+h1,h2 
+{
+    color: black;
+    text-transform: capitalize;
+}
+a 
+{
+    text-decoration: none;
+    color: var(--contranst-primary);
+    text-transform: capitalize;
+    padding: 0;
+    position: relative;
+    margin: 2px 0;
+    width: fit-content;
+}
+a:hover 
+{
+    color: #6778d6;
+}

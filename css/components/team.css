@@ -1,0 +1,47 @@
+.team 
+{
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.team .team_grid .member
+{
+    width: 200px;
+    
+    margin-top: 2rem;
+    display: block;
+}
+
+.team .team_grid .member img 
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.team .team_grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.team .team_grid .member h1 
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+.team .team_grid .member p 
+{
+    text-align: center;
+}
+
+.team .button 
+{
+    margin-top: 30px;
+}

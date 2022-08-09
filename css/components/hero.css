@@ -1,0 +1,65 @@
+.hero
+{
+    height: 90vh;
+    min-height: 500px;
+    max-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    position: relative;
+    color: white;
+    
+}
+
+.hero .text
+{
+    width: 70%;
+}
+.hero .text h1 
+{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero .text button, .hero .text a
+{
+    margin-top: 20px;
+}
+.hero::after
+{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-image: var(--hero-image);
+    clip-path: inset(0 -100vmax);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    filter: brightness(.4);
+
+}
+
+
+@media screen and (max-width:720px) {
+    .hero .text h1 
+    {
+        font-size: 1.5rem;
+    }
+    .hero .text
+    {
+        width: 90%;
+    }
+    .hero .text p 
+    {
+        font-size: 12px;
+    }
+}

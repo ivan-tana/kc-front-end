@@ -1,0 +1,81 @@
+.who-we-are
+{
+    width: 100%;
+    padding: 4rem 1rem;
+}
+
+.who-we-are .item_grid 
+{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+.who-we-are .item_grid .image_grid 
+{
+    display: grid;
+    max-width: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one one one"
+    "two  two three"
+    "two two four"
+    ;
+    gap: 5px;
+    
+}
+.who-we-are .item_grid .image_grid img 
+{
+    width: 100%;
+    min-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+@media screen and (max-width:730px) {
+    .who-we-are .item_grid .image_grid img
+    {
+        display: none;
+    }
+ 
+    .who-we-are .item_grid
+    {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+.who-we-are p 
+{
+    margin: 20px 0;
+}
+.who-we-are .item_grid .image_grid img:nth-child(1)
+{
+    grid-area: one;
+    height: 100%;
+}
+.who-we-are .item_grid .image_grid img:nth-child(2)
+{
+    grid-area: two;
+    grid-row: auto/ span 2;
+    height: 100%;
+}
+.who-we-are .item_grid .image_grid img:nth-child(3)
+{
+    grid-area: three;
+    height: 100%;
+}
+.who-we-are .item_grid .image_grid img:nth-child(4)
+{
+    grid-area: four;
+    height: 100%;
+}
+
+
+.who-we-are .item_grid .text .button
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
